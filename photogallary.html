@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="photogallary.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>SHOPS</h1>
+        <ul>
+            <li><a href="">HOME</a></li>
+            <li><a href="">ABOUT</a></li>
+            <li><a href="">BRANDS</a></li>
+            <li><a href="">COMPLAINT</a></li>
+            <a href=""><i class='bx bxs-shopping-bag bx-tada'></i></a>
+        </ul>
+
+    </div>
+    <div class="product_img">
+            <div class="contain_img">
+                <img src="2.jpg" alt="" onclick="myfunction(this)">
+                <img src="3.jpg" alt="" onclick="myfunction(this)">
+                <img src="4.jpg" alt="" onclick="myfunction(this)">
+                <img src="5.jpg" alt="" onclick="myfunction(this)">
+            </div>
+
+            <div class="main_image">
+                <img src="men1.jpg" alt="" id="big_image">
+            </div>
+        
+        <div class="heading">
+            <h2 class="topic">Men's wedding kurta </h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium,
+                eos nemo architecto quo nihil expedita. Quasi inventore dolores modi. Ex pariatur eos quae totam aut.
+            </p>
+            <ul class="menu">
+                <li>Lorem ipsum dolor sit.</li>
+                <li>Lorem ipsum dolor sit.</li>
+                <li>Lorem ipsum dolor sit.</li>
+
+            </ul>
+            <p class="money">Rs.1299 <span style="text-decoration: line-through;">Rs.1699</span><span
+                    style="color: rgb(14, 236, 158);">(20% Off)</span></p>
+
+            <button type="button" class="btn"><i class='bx bxs-shopping-bag'></i>Buy Now</i></button>
+            <button type="button" class="btn"><i class='bx bxs-heart'></i>Buy Now</button>
+        </div>
+    </div>
+
+    <script>
+        function myfunction(smallimg) {
+            var change = document.getElementById("big_image");
+            change.src = smallimg.src;
+        }
+    </script>
+</body>
+
+</html>
